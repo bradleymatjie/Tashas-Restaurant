@@ -1,0 +1,222 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;1,400&family=Dancing+Script:wght@400;600&family=Fasthand&display=swap');
+body {
+  background-color: #f0f5f9;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* start of header code */
+header {
+  display: flex;
+  justify-content: space-between;
+ align-items: center;
+ background-color: #f0f5f9;
+ font-family: 'Crimson Text', sans-serif;
+ position: fixed;
+ padding: 10px 30px;
+ left: 0;
+ right: 0;
+ top: 0;
+}
+
+.logo {
+  font-family: 'Fasthand', sans-serif;
+  font-size: 24px;
+  text-shadow: 1px 1px 1px grey;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+nav ul li > a {
+  text-decoration: none;
+  color: black;
+  transition: ease-in-out .5s;
+}
+
+nav ul li > a:hover {
+  color: #ce1b1b;
+  border-bottom: 2px double #52616b;
+  cursor: pointer;
+}
+
+header div {
+  display: flex;
+  gap: 10px;
+}
+
+header div > button {
+  border: 1px solid white;
+  background-color: #ce1b1b;
+  width: 75px;
+  height: 35px;
+  color: white;
+}
+
+/* the shopping bag icon */
+.cart {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiKONRhX7SjSxc7Nrc6ZKPfMsHDCwZsPo7zw&usqp=CAU");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+
+/* end of header code  */
+
+/* START OF HOME PAGE */
+.home {
+  height: 100vh;
+}
+
+.top_section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.welcome_text {
+  font-size: 28px;
+}
+
+.welcome_text h1 > span {
+  color: red;
+}
+
+.welcome_text button {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.welcome_text :nth-child(2) {
+  background-color: #ce1b1b;
+}
+
+.main_meal {
+  background-image: url("https://www.diabetesfoodhub.org/system/user_files/Images/1837-diabetic-pecan-crusted-chicken-breast_JulAug20DF_clean-simple_061720.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 450px;
+  border: 1px solid red;
+  border-radius: 50px;
+}
+
+/* END OF HOME PAGE */
+
+/* START OF MENU MEALS PAGE  */
+
+.menu_meals {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.meals {
+  display: flex;
+  gap: 50px;
+  width: 900px;
+  height: 340px;
+  padding: 10px;
+  overflow-x: scroll;
+}
+
+.meals::-webkit-scrollbar {
+  background-color: red;
+  height: 1px;
+}
+
+.meals div {
+  background-color: transparent;
+  padding: 5px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 10px 1px black;
+}
+
+.meals div > h2 {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.meals div > p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.meals div p > span {
+  font-family: 'Fasthand', cursive;
+}
+
+.meals div > button {
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: tomato;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.menu_meals div > img {
+  width: 250px;
+  max-height: 170px;  
+}
+
+/* END OF MENU MEALS  */
+
+/* START OF ABOUT ME SECTION  */
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.about img {
+  border-radius: 30%;
+}
+
+.about-text {
+  width: 50%;
+  height: 400px; 
+}
+
+.about-text h2 {
+  font-size: 48px;
+  font-family: 'Fasthand', cursive;
+}
+
+.about-text p {
+  font-family: 'Crimson Text', Helvetica, sans-serif;
+}
+
+.about-text button {
+  width: 200px;
+  height: 40px;
+  border:1px solid red;
+  background-color: #ce1b1b;
+  border-radius: 20px;
+}
