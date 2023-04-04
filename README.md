@@ -1,5 +1,5 @@
 # Tasha's Restaurant
-[DEMO LINK](https://bradleymatjie.github.io/tashas-restaurant/)
+[DEMO LINK](https://bradleymatjie.github.io/Tashas-Restaurant/)
 
 ## Technologies
 Project is created with:
