@@ -1,8 +1,14 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;1,400&family=Dancing+Script:wght@400;600&family=Fasthand&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f0f5f9;
   font-size: 18px;
+  margin: 0;
 }
 
 a {
@@ -14,7 +20,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
- align-items: center;
+  align-items: center;
  background-color: #f0f5f9;
  font-family: 'Crimson Text', sans-serif;
  position: fixed;
@@ -22,6 +28,7 @@ header {
  left: 0;
  right: 0;
  top: 0;
+ z-index: 10;
 }
 
 .logo {
@@ -116,6 +123,7 @@ header div > button {
   height: 450px;
   border: 1px solid red;
   border-radius: 50px;
+  box-shadow: 1px 1px 10px 1px grey;
 }
 
 /* END OF HOME PAGE */
@@ -227,18 +235,24 @@ header div > button {
 /* START OF CONTACT PAGE */
 
 .contact {
-  height: 100vh; 
+  height: 90vh; 
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   color: white;
   background-image: linear-gradient(to bottom right, #233a4e, #9c6db0);
   border-radius: 74% 26% 0% 100% / 49% 32% 68% 51%;
 }
 
+.contact > div {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
 .contact img {
   width: 450px;
-  height: 450px;
+  height: 380px;
 }
 
 .contact h1 {
@@ -264,6 +278,7 @@ form {
   flex-direction: column;
   width: 250px;
   gap: 20px;
+  z-index: 0;
 }
 
 form input {
@@ -309,6 +324,31 @@ form button {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(to bottom left,#9c6db0, #233a4e, #2d142c);
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  color: whitesmoke;
+}
+
+footer > div p {
+  cursor: pointer;
+}
+
+footer > div h3 {
+  text-decoration: underline;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .7;
 }
