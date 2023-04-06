@@ -131,31 +131,36 @@ header div > button {
 /* START OF MENU MEALS PAGE  */
 
 .menu_meals {
-  height: 100vh;
+  height: 98vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-
+  justify-content: space-evenly;
+  overflow: hidden;
 }
 
 .meals {
+  margin-top: 50px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
-  width: 900px;
-  height: 340px;
-  padding: 10px;
-  overflow-x: scroll;
+  width: 450px;
+  height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-top: 0;
+  padding: 50px 0;
 }
 
-.meals::-webkit-scrollbar {
-  background-color: red;
-  height: 1px;
+.meals .first-child {
+  margin-top: 150px;
 }
 
 .meals div {
   background-color: transparent;
   padding: 5px;
+  max-width: 300px;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -164,7 +169,7 @@ header div > button {
 }
 
 .meals div > h2 {
-  font-size: 16px;
+  font-size: 14px;
   margin: 10px;
 }
 
@@ -190,6 +195,23 @@ header div > button {
 .menu_meals div > img {
   width: 250px;
   max-height: 170px;  
+}
+
+.meals-text h2 {
+  font-size: 35px;
+}
+
+.meals-text p {
+  font-size: 24px;
+}
+
+.meals-text button {
+  width: 150px;
+  height: 40px;
+  background-color: #ce1b1b;
+  color: white;
+  border: none;
+  border-radius: 20px;
 }
 
 /* END OF MENU MEALS  */
@@ -235,13 +257,15 @@ header div > button {
 /* START OF CONTACT PAGE */
 
 .contact {
-  height: 90vh; 
+  height: 100vh; 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: white;
   background-image: linear-gradient(to bottom right, #233a4e, #9c6db0);
   border-radius: 74% 26% 0% 100% / 49% 32% 68% 51%;
+  /* margin-top: 50px; */
 }
 
 .contact > div {
@@ -322,6 +346,8 @@ form button {
   color: white;
 }
 
+/* FOOTER STYLES  */
+
 footer {
   display: flex;
   flex-direction: column;
@@ -351,4 +377,23 @@ footer > div h3 {
   justify-content: center;
   align-items: center;
   opacity: .7;
+}
+
+/* scroll bar  */
+
+/* width */
+.meals::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.meals::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.meals::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
 }
