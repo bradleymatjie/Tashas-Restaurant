@@ -233,11 +233,26 @@ header div > button {
   position: relative;
 }
 
+.about-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 400px;
+  position: relative;
+  right: 400px;
+}
+
+.about-image-container p {
+  color: #f0f5f9;
+  text-shadow: 2px 1px 1px black;
+  width: 60%;
+  text-align: left;
+}
+
 .about img {
   border-radius: 30%;
-  position: absolute;
-  left: 10px;
-  top: 150px;
 }
 
 .about-text {
